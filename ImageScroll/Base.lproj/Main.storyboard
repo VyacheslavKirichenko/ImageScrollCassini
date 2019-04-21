@@ -20,21 +20,6 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVr-Go-u3d">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="415" placeholderIntrinsicHeight="866" translatesAutoresizingMaskIntoConstraints="NO" id="GAV-Uw-Ktc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="top" secondItem="qVr-Go-u3d" secondAttribute="top" id="Mwc-yb-t5q"/>
-                                    <constraint firstAttribute="bottom" secondItem="GAV-Uw-Ktc" secondAttribute="bottom" id="Orn-p4-S7Q"/>
-                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="leading" secondItem="qVr-Go-u3d" secondAttribute="leading" id="dPc-IK-fZa"/>
-                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="leading" secondItem="qVr-Go-u3d" secondAttribute="leading" id="gwk-3W-I0U"/>
-                                    <constraint firstAttribute="trailing" secondItem="GAV-Uw-Ktc" secondAttribute="trailing" id="hgL-Du-6kg"/>
-                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="top" secondItem="qVr-Go-u3d" secondAttribute="top" id="mnu-99-ycN"/>
-                                    <constraint firstAttribute="bottom" secondItem="GAV-Uw-Ktc" secondAttribute="bottom" id="qGC-qD-KTf"/>
-                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="leading" secondItem="qVr-Go-u3d" secondAttribute="leading" id="wXq-Tw-vbt"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
