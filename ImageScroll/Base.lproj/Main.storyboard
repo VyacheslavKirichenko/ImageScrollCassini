@@ -1,24 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KpS-tb-7Uh">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Image View Controller-->
+        <scene sceneID="C1j-Ij-nTV">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="KpS-tb-7Uh" customClass="ImageViewController" customModule="ImageScroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fvV-cJ-gI7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVr-Go-u3d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="415" placeholderIntrinsicHeight="866" translatesAutoresizingMaskIntoConstraints="NO" id="GAV-Uw-Ktc">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="top" secondItem="qVr-Go-u3d" secondAttribute="top" id="Mwc-yb-t5q"/>
+                                    <constraint firstAttribute="bottom" secondItem="GAV-Uw-Ktc" secondAttribute="bottom" id="Orn-p4-S7Q"/>
+                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="leading" secondItem="qVr-Go-u3d" secondAttribute="leading" id="dPc-IK-fZa"/>
+                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="leading" secondItem="qVr-Go-u3d" secondAttribute="leading" id="gwk-3W-I0U"/>
+                                    <constraint firstAttribute="trailing" secondItem="GAV-Uw-Ktc" secondAttribute="trailing" id="hgL-Du-6kg"/>
+                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="top" secondItem="qVr-Go-u3d" secondAttribute="top" id="mnu-99-ycN"/>
+                                    <constraint firstAttribute="bottom" secondItem="GAV-Uw-Ktc" secondAttribute="bottom" id="qGC-qD-KTf"/>
+                                    <constraint firstItem="GAV-Uw-Ktc" firstAttribute="leading" secondItem="qVr-Go-u3d" secondAttribute="leading" id="wXq-Tw-vbt"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qVr-Go-u3d" secondAttribute="bottom" id="FE8-9F-kxA"/>
+                            <constraint firstItem="qVr-Go-u3d" firstAttribute="trailing" secondItem="fvV-cJ-gI7" secondAttribute="trailing" id="b3v-dv-Czj"/>
+                            <constraint firstItem="qVr-Go-u3d" firstAttribute="leading" secondItem="fvV-cJ-gI7" secondAttribute="leading" id="bg7-4O-gIv"/>
+                            <constraint firstItem="qVr-Go-u3d" firstAttribute="top" secondItem="fvV-cJ-gI7" secondAttribute="top" id="zhg-a2-w59"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7bE-C2-L6A"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="qVr-Go-u3d" id="5ZD-Xq-EGY"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKd-mh-WKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="170.75892857142856"/>
         </scene>
     </scenes>
 </document>
